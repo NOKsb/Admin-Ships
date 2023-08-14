@@ -1,0 +1,136 @@
+return model =
+  name: 'TheBug'
+  level: 1
+  model: 3
+  size: 1.65
+  zoom: 0.8
+  specs:
+    shield:
+      capacity: [1e+91,1e+91]
+      reload: [1e+69,1e+69]
+    generator:
+      capacity: [6300,4300000]
+      reload: [1e+41,99999999999]
+    ship:
+      mass: 1e+68
+      speed: [300,300]
+      rotation: [9999,9999]
+      acceleration: [220,220]
+  bodies:
+    main:
+      section_segments: 18
+      offset:
+        x: 0
+        y: 5
+        z: 12
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0]
+        y: [0,-54,-42,-20,10,30,55,75,60]
+        z: [0,0,0,0,0,0,0,0]
+      width: [0,0,17,25,22,28,17,12,2]
+      height: [0,0,8,12,20,20,18,12,0]
+      propeller: true
+      texture: [6,63,4,10,4,2,13,17]
+    cockpit:
+      section_segments: 18
+      offset:
+        x: 0
+        y: 4
+        z: 20
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-15,0,20,25,60]
+        z: [0,0,0,0,10]
+      width: [0,13,15,15,0]
+      height: [0,15,20,19,0]
+      propeller: false
+      texture: [9,9,5,63,63]
+    deco:
+      section_segments: 14
+      offset:
+        x: -42
+        y: 80
+        z: -12
+      position:
+        x: [0,0,0,0,0,0]
+        y: [-40,-50,-20,0,20,30]
+        z: [0,0,0,0,0,20]
+      width: [0,5,8,11,7,0]
+      height: [0,5,8,11,0]
+      angle: -10
+      texture: [17,4,10,63]
+      propeller: true
+    cannonB:
+      section_segments: 6
+      offset:
+        x: 0
+        y: 20
+        z: 0
+      position:
+        x: [0,0,0,0,0,0]
+        y: [-40,-50,-20,0,20,30]
+        z: [0,0,0,0,0,20]
+      width: [0,5,8,11,7,0]
+      height: [0,5,8,11,0,0]
+      angle: 0
+      laser:
+        damage: [6000,0.1]
+        rate: 7
+        type: 1
+        speed: [500,1]
+        number: 1
+        error: 0
+      propeller: false
+      texture: [17,3,10,3]
+    cannon:
+      section_segments: 6
+      offset:
+        x: 0
+        y: 20
+        z: 10
+      position:
+        x: [0,0,0,0,0,0]
+        y: [-40,-50,-20,0,20,30]
+        z: [0,0,0,0,0,20]
+      width: [0,5,8,11,7,0]
+      height: [0,5,8,11,10,0]
+      angle: 0
+      laser:
+        damage: [0.1,6144]
+        rate: 8
+        type: 1
+        speed: [1,500]
+        number: 360
+        error: 0
+        angle: 360
+      propeller: false
+      texture: [3,3,10,3]
+  wings:
+    main:
+      length: [70,20]
+      width: [30,47,23]
+      angle: [-10,10]
+      position: [35,18,10]
+      doubleside: true
+      offset:
+        x: 0
+        y: -10
+        z: 10
+      bump:
+        position: -10
+        size: 15
+      texture: [18,63]
+    winglets:
+      length: [40,13]
+      width: [20,28,17]
+      angle: [-10,10]
+      position: [-70,-60,-66]
+      doubleside: true
+      bump:
+        position: -60
+        size: 15
+      texture: [11,63]
+      offset:
+        x: 0
+        y: 105
+        z: 3
