@@ -74,7 +74,7 @@ return model =
       height: [0,5,8,11,0,0]
       angle: 0
       laser:
-        damage: [6000,0.1]
+        damage: [6000,1000000000]
         rate: 7
         type: 1
         speed: [500,1]
@@ -96,7 +96,7 @@ return model =
       height: [0,5,8,11,10,0]
       angle: 0
       laser:
-        damage: [0.1,6144]
+        damage: [1000000000,6144]
         rate: 8
         type: 1
         speed: [1,500]
