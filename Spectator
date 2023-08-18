@@ -1,7 +1,7 @@
 return model =
   name: 'Spectator'
-  level: 1.9
-  model: 1
+  level: 1
+  model: 2
   size: 0.025
   zoom: 0.075
   specs:
