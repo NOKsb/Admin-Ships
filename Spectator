@@ -7,15 +7,22 @@ return model =
   specs:
     shield:
       capacity: [1e-30,1e-30]
-      reload: [1000,1000]
+      reload: [1e-30,1e-30]
     generator:
-      capacity: [1e-30,1e-30]
-      reload: [1,1]
+      capacity: [900,900]
+      reload: [9999999,9999999]
     ship:
       mass: 1
       speed: [200,200]
       rotation: [1000,1000]
       acceleration: [1000,1000]
+      dash:
+        rate: 10
+        burst_speed: [2000,2000]
+        speed: [600,600]
+        acceleration: [1500,1500]
+        initial_energy: [1,1]
+        energy: [1,1]
   bodies: face:
     section_segments: 100
     angle: 0
