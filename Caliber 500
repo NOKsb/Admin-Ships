@@ -9,31 +9,39 @@ return model =
       capacity: [3.01e+24,4.01e+35]
       reload: [1e+39,1e+47]
     generator:
-      capacity: [999,999]
-      reload: [999,999]
+      capacity: [900,900]
+      reload: [900,900]
     ship:
       mass: 1e+23
       speed: [400,400]
       rotation: [9999999,9999999]
       acceleration: [300,300]
       dash:
-        rate: 3
+        rate: 10
         burst_speed: [2000,2000]
         speed: [600,600]
         acceleration: [1500,1500]
-        initial_energy: [1,1]
+        initial_energy: [1000,1]
         energy: [1,1]
-  bodies: body:
-    section_segments: 20
-    offset:
-      x: 0
-      y: 0
-      z: 0
-    position:
-      x: [0,0,0,0,0,0,0,0,0,0]
-      y: [-219,-200,-170,-140,-110,-80,-50,0,90,80]
-      z: [0,0,0,0,0,0,0,0,0,0,0]
-    width: [0,11.5,25.3,35.5,42.2,46,48,49,47.5,0]
-    height: [0,11.5,25.8,35.5,42.2,46,48,49,47.5,0]
-    texture: [ 5 ]
-    propeller: 0
+  bodies: 
+    body:
+      section_segments: 20
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0]
+        y: [-219,-200,-170,-140,-110,-80,-50,0,90,80]
+        z: [0,0,0,0,0,0,0,0,0,0,0]
+      width: [0,11.5,25.3,35.5,42.2,46,48,49,47.5,0]
+      height: [0,11.5,25.8,35.5,42.2,46,48,49,47.5,0]
+      texture: [ 5 ]
+      propeller: 0
+      laser:
+        damage: [25,3000]
+        rate: 10
+        type: 1
+        speed: [700,700]
+        number: 4
+        error: 0
